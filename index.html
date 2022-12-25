@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+   
+
+        <div class="header">
+
+            <div class="logo">
+                <img src="ll.jpg" alt="">
+            </div> 
+            <form action="">
+                <input type="text" class="ara">
+            </form>
+            
+            
+            <div class="nav-bar" id="navbar">
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+                <ul>
+
+
+                    <li><a href="#"> HAKKIMIZDA </a></li>
+                    <li><a href="#"> HALK MÜZİĞİ </a></li>
+                    <li><a href="#"> KARIŞIK </a></li>
+                    <li><a href="#"> ENSTÜRÜMANTAL </a></li>
+                    <li><a href="index.html"><i class="bi bi-search"></i></a></li>
+                </ul>
+
+
+            </div>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+            
+        </div>
+        
+
+    
+
+    </div>
+    <div>
+        <marquee class="kayan" direction=left>MÜZİĞİN TEK ADRESİ</marquee>
+        <!-- marque kayan yazı oluşturur-->
+    </div>
+    <div class="row">
+        <div class="col1">
+            <h1>SINIRSIZ <br>
+                <span>MÜZİK DİNLE</span>
+            </h1>
+            <p>Sevdiğin müziği araştır.Şarkı sözlerini ve <br> sanatçıları keşfet.</p>
+            <br><br><br><br>
+            <a class="btn" href=""><span></span> Şimdi Keşfet</a>
+        </div>
+        <div class="col2">
+            <div class="box">
+                <img src="tv.png" alt="">
+
+                <video src="videoo.mp4" autoplay   loop></video>
+            </div>
+
+
+        </div>
+        
+
+        </div>
+    </div>
+    <script>
+        var navbar=document.getElementById('navbar')
+
+        function showMenu() {
+            navbar.style.right = "0"
+        }
+
+        function hideMenu() {
+            navbar.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>

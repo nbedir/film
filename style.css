@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(resim.jpg);
+
+}
+
+.logo {
+    width: 10px;
+    height: 100%;
+}
+
+.header {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 25px;
+    position: relative;
+
+
+
+
+}
+
+ul li a {
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    position: relative;
+
+}
+
+ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+ul li a:hover:after {
+    width: 100%;
+
+
+
+}
+li a img{
+    width: 20px;
+    background-color: black;
+}
+
+.bi {
+    display: none;
+}
+@media (min-width:900px){
+     ul li img{
+        display: none;
+     }    
+}
+
+@media (max-width:900px) {
+    .ara{
+     display: none;
+       
+    }
+    .header{
+        display: flex;
+        justify-content:space-between;
+    }
+    
+    .nav-bar ul li {
+        display: block;
+    }
+
+
+    .nav-bar  {
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        right: -200px;
+        height: 100vh;
+        top: 0;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .header .bi {
+        color: red;
+        display: block;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        
+
+
+    }
+    
+    
+    .col2{
+        display: none;
+    }
+}
+
+
+.kayan {
+    margin-top: 20px;
+    font-style:italic;
+    font-weight: 400;
+    color: blueviolet;
+    transition: 2s;
+    font-size: 50px;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.col2 {
+    flex-basis: 50%;
+}
+
+
+
+.col1 {
+    margin: 150px;
+
+}
+
+.col1 h1 {
+    color: aquamarine;
+    font-size: 50px;
+}
+
+
+p {
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(0, 255, 21);
+
+}
+
+.btn {
+    border: 2px solid aqua;
+    margin: 60px;
+    padding: 15px 5px;
+    text-align: center;
+    width: 200;
+    border-radius: 25px;
+    font-size: 25px;
+    text-decoration: none;
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn span {
+    border-radius: 25px;
+    background: aqua;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    width: 100%;
+}
+
+.btn:hover {
+    border: none;
+}
+
+.ara {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: antiquewhite;
+    color: black;
+    font-size: 15px;
+    font-style: italic;
+
+
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top:20px
+
+
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+
+
+
+
+
+}
+
+.box video {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 80px;
+    mix-blend-mode: screen;
+
+
+
+
+}
